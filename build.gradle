@@ -25,11 +25,5 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-task test(type: Test){
-    testLogging {
-        exceptionFormat "full"
-        events "started", "skipped", "passed", "failed"
-        showStandardStreams true
-    }
-}
+
 
