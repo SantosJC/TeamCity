@@ -42,14 +42,6 @@ android {
     }
 }
 
-tasks.withType(Test) {
-    testLogging {
-        exceptionFormat "full"
-        events "started", "skipped", "passed", "failed"
-        showStandardStreams true
-    }
-}
-
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
