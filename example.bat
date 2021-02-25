@@ -1,5 +1,8 @@
-@echo off
+@ECHO OFF
 
-gradle clean
-gradle build
-gradle test
+gradlew clean
+ECHO ========
+gradlew build
+ECHO =========
+gradlew test
+ECHO========
