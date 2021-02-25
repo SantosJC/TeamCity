@@ -26,11 +26,11 @@ allprojects {
 //task clean(type: Delete) {
   //  delete rootProject.buildDir
 //}
-//test {
-//    useTestNG()
-    //useJUnitPlatform()
-  //  include 'com.example.teamcity/**'
-//}
+test {
+    useTestNG()
+    useJUnitPlatform()
+   include 'com.example.teamcity/**'
+}
 
 
 
