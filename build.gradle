@@ -14,7 +14,6 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-apply plugin: 'java'
 
 allprojects {
     repositories {
@@ -23,13 +22,8 @@ allprojects {
     }
 }
 
-//task clean(type: Delete) {
-  //  delete rootProject.buildDir
-//}
-test {
-    useTestNG()
-    useJUnitPlatform()
-   include 'com.example.teamcity/**'
+task clean(type: Delete) {
+  delete rootProject.buildDir
 }
 
 
